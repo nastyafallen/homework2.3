@@ -1,12 +1,8 @@
 package com.company;
 
-public class ServiceStation implements ServiceInterface {
+public class ServiceStation {
 
-    public ServiceStation() {
-    }
-
-    @Override
-    public void check(ServiceStation serviceStation) {
-        serviceStation.check();
+    public void check(ServiceInterface serviceInterface) {
+        serviceInterface.check();
     }
 }

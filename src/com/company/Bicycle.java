@@ -7,12 +7,12 @@ public class Bicycle extends Transport implements ServiceInterface {
     }
 
     @Override
-    public void updateTyre(Bicycle bicycle) {
+    public void updateTyre() {
         System.out.println("Меняем покрышку велосипеда");
     }
 
     @Override
-    public void check(Bicycle bicycle) {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();

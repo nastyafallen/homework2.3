@@ -7,12 +7,12 @@ public class Truck extends Transport implements ServiceInterface {
     }
 
     @Override
-    public void updateTyre(Truck truck) {
+    public void updateTyre() {
         System.out.println("Меняем покрышку грузовика");
     }
 
     @Override
-    public void check(Truck truck) {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();

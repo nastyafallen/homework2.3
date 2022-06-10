@@ -7,12 +7,12 @@ public class Car extends Transport implements ServiceInterface {
     }
 
     @Override
-    public void updateTyre(Car car) {
+    public void updateTyre() {
         System.out.println("Меняем покрышку машины");
     }
 
     @Override
-    public void check(Car car) {
+    public void check() {
         System.out.println("Обслуживаем " + getModelName());
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
